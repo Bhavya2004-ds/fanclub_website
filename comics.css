@@ -1,0 +1,37 @@
+body{
+font-family: waltograph;
+background-image: url('https://i.pinimg.com/736x/61/58/e6/6158e690be85320240375dabb44a4522.jpg');
+}
+
+h1{
+    font-size: 80px;
+    color:white;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.551),black) ;
+}
+h2{
+    font-size: 40px;
+    color: white;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.551),black) ;
+}
+.container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+img{
+    border-radius: 20px;
+    border:2px solid black;
+    margin: 0.5%;
+}
+button{
+    font-family: waltograph;
+    border-radius: 20px;
+    width: 20%;
+    height: 50px;
+    font-size: 25px;
+    background-color: rgb(171, 138, 57);
+}
+button:hover{
+    background-color: beige;
+}

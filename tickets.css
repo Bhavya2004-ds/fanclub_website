@@ -1,0 +1,73 @@
+body{
+    font-family: waltograph;
+    background-image: url('https://i.pinimg.com/564x/c7/af/c0/c7afc065df9697a53daedd134144445d.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+   text-align: center;
+   font-size: 100px;
+   padding: 1px;
+   margin: 1px;
+   color:beige;
+}
+h3{
+    color: bisque;
+    font-size: 50px;
+    text-align: center;
+}
+h4{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    color: beige;
+}
+.money{
+    font-size:50px;
+    font-weight: 500;
+    color:white;
+    text-align: right;
+}
+.map{
+    border-radius: 50px;
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+    height:500px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    width: 25%;
+    height: 50px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 20px;
+    background-color: rgb(159, 97, 218);
+    font-family:waltograph;
+    font-size: 25px;
+}
+button:hover{
+    background-color: rgb(132, 186, 234);
+}
+iframe{
+    width: 50%;
+    height:500px;
+    border-radius: 50px;
+    align-self: center;
+    justify-self: center;
+    background-color: white;
+}
+input[type=text]
+{
+    width: 25%;
+    justify-self: center;
+    align-self: center;
+    font-family: cursive;
+    font-size: 15px;
+}
+img{
+    justify-self: left;
+}

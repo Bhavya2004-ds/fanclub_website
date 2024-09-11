@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="tickets.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tickets</title>
+</head>
+<body>
+<div class="container">
+   
+<p id="time" class="money"></p>
+<script >
+setInterval(t);
+function t() {
+const x =new Date();
+document.getElementById("time").innerHTML = x.toLocaleTimeString();}
+</script>
+<h1>Tickets</h1>
+
+<h3>Hongkong Disneyland</h3>
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0758350415954!2d114.03870697408716!3d22.312971542438323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403fc2f53d3953d%3A0x35b3af6ce4475405!2sHong%20Kong%20Disneyland!5e0!3m2!1sen!2sin!4v1692899979762!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<h4>Get Your Current Location</h4>
+<p style="text-align: center;font-size:30px;color: beige;">Click the button to get your coordinates.</p>
+<button onclick="l()">Coordinates</button>
+<p style="text-align: center;color: beige;font-size: 30px;" id="let"></p>
+<script>
+const x = document.getElementById("let");
+function l() {
+try {
+navigator.geolocation.getCurrentPosition(showPosition);}  
+catch{
+x.innerHTML = error;}
+}
+function showPosition(cordinates) {
+x.innerHTML = "Latitude: " + cordinates.coords.latitude + 
+"<br>Longitude: " + cordinates.coords.longitude;
+}
+</script>
+
+<input type="text" placeholder="Fill coordinates" id="coordinates">
+<button onclick="Copy()">Copy Coordinates</button>
+<script>
+function Copy() {
+var c = document.getElementById("coordinates");
+c.select();
+navigator.clipboard.writeText(c.value);
+alert("Copied the text: " + c.value);
+}
+</script>
+<p style="text-align: center;font-size:30px;color: beige;">Check out some more amazing Disneylands and other stuff from the website embeded below</p>
+<iframe src="https://disneyland.disney.go.com/admission/tickets/" title="travel">
+</iframe>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+   html{
+    scroll-behavior: smooth;
+   } 
+   body{
+    background-image: url('https://i.pinimg.com/564x/29/52/f3/2952f3b41a68a5f733363931b31d00ce.jpg');
+    font-family: waltograph;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+   .lover{
+     color: rgb(244, 241, 241);
+     font-size: 100px;
+     
+    }
+   
+   .flex-item{
+     display: flex;
+     justify-content: space-between;
+     flex-basis: auto;
+     flex-wrap:wrap ;
+   }
+   a img{
+     width: 320px;
+     height: 600px;
+     border-radius: 50px;
+     transition-duration: 1s;
+     }
+   a img:hover{
+     width:350px;
+     height:630px;
+     border-top-left-radius: 50% ; 
+     border-top-right-radius: 50% ; 
+     border-bottom-right-radius: 50% ; 
+     border-bottom-left-radius: 50% ;
+   }
